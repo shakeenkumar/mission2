@@ -1,38 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 20px;
+    background-color: #fff; /* Default light background */
+    color: #000; /* Default text color */
 }
 
 header {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    color: #006EB6; /* Main blue color */
+    margin: 0;
 }
 
-body.dark {
-    background-color: #333;
-    color: white; /* Default text color for dark theme */
+h2 {
+    margin: 10px 0;
+    color: #006EB6; /* Default blue for light theme */
 }
 
-body.dark h2 {
-    color: #0072B8; /* Example light blue color with good contrast */
+/* Dark theme styles */
+.dark {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
 }
 
-body.dark footer {
-    background-color: #444; /* Footer background for dark theme */
-    padding: 10px;
-    text-align: center;
+.dark h2 {
+    color: #A8D8EA; /* Lighter blue for subtitle in dark theme */
 }
 
-footer img {
-    width: 150px; /* Adjust logo size */
-}
-
-/* Dark theme adjustments */
-body.dark #logo {
-    content: url('byui-logo-white.png'); /* Change logo for dark theme */
+.dark #logo {
+    content: url('byui-logo-white.png'); /* Placeholder for white logo */
 }
