@@ -2,36 +2,35 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff; /* Default light background */
+    color: #000; /* Default text color */
 }
 
 header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    color: #003DA5; /* BYU Blue */
+    margin: 0;
 }
 
 h2 {
-    color: #0072C6; /* A suitable blue for the subtitle */
+    margin: 10px 0;
+    color: #006EB6; /* Default blue for light theme */
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-}
-
+/* Dark theme styles */
 .dark {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
 }
 
 .dark h2 {
-    color: #0072C6; /* Keep the subtitle blue for contrast */
+    color: #A8D8EA; /* Lighter blue for subtitle in dark theme */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.dark #logo {
+    content: url('byui-logo-white.png'); /* Placeholder for white logo */
 }
