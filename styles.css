@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #006EB6; /* Main blue color */
+}
+
+body.dark {
+    background-color: #333;
+    color: white; /* Default text color for dark theme */
+}
+
+body.dark h2 {
+    color: #0072B8; /* Example light blue color with good contrast */
+}
+
+body.dark footer {
+    background-color: #444; /* Footer background for dark theme */
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    width: 150px; /* Adjust logo size */
+}
+
+/* Dark theme adjustments */
+body.dark #logo {
+    content: url('byui-logo-white.png'); /* Change logo for dark theme */
+}
