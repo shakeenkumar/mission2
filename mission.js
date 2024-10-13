@@ -1,17 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const themeSelector = document.getElementById("theme-selector");
-    const body = document.body;
-    const logo = document.getElementById("logo");
+const themeSelector = document.getElementById('theme-selector');
+const body = document.body;
+const logo = document.getElementById('logo');
 
-    themeSelector.addEventListener("change", changeTheme);
+themeSelector.addEventListener('change', (event) => {
+    const selectedTheme = event.target.value;
 
-    function changeTheme() {
-        if (themeSelector.value === "dark") {
-            body.classList.add("dark");
-            logo.src = "byui-logo-white.png"; // Update logo for dark theme
-        } else {
-            body.classList.remove("dark");
-            logo.src = "byui-logo.png"; // Default logo for light theme
-        }
+    if (selectedTheme === 'dark') {
+        body.classList.add('dark');
+        logo.src = 'byui-logo-white.png'; // Change to white logo
+    } else {
+        body.classList.remove('dark');
+        logo.src = 'byui-logo.png'; // Change back to original logo
     }
 });

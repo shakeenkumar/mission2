@@ -1,18 +1,20 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    margin: 0;
+    padding: 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-    padding: 20px;
     text-align: center;
 }
 
+h1 {
+    color: #003DA5; /* BYU Blue */
+}
+
 h2 {
-    color: blue;
+    color: #0072C6; /* A suitable blue for the subtitle */
 }
 
 footer {
@@ -26,9 +28,10 @@ footer {
 }
 
 .dark h2 {
-    color: lightblue; /* Adjust as needed for contrast */
+    color: #0072C6; /* Keep the subtitle blue for contrast */
 }
 
-.dark #logo {
-    content: url('byui-logo-white.png'); /* Ensure you have a white logo */
+img {
+    max-width: 100%;
+    height: auto;
 }
